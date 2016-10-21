@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B90863F1DBA5B5300CAFC74 /* HeroAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B90863E1DBA5B5300CAFC74 /* HeroAttributes.swift */; };
+		1B9086411DBA5E8500CAFC74 /* OverwatchHero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9086401DBA5E8500CAFC74 /* OverwatchHero.swift */; };
+		1B9086431DBA63F300CAFC74 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9086421DBA63F300CAFC74 /* Hero.swift */; };
+		1B9086451DBA66E800CAFC74 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9086441DBA66E800CAFC74 /* Game.swift */; };
 		7D69AE6B1DAAF58B006B180A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D69AE6A1DAAF58B006B180A /* AppDelegate.swift */; };
 		7D69AE6D1DAAF58B006B180A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D69AE6C1DAAF58B006B180A /* ViewController.swift */; };
 		7D69AE701DAAF58B006B180A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D69AE6E1DAAF58B006B180A /* Main.storyboard */; };
@@ -30,6 +34,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B90863E1DBA5B5300CAFC74 /* HeroAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroAttributes.swift; sourceTree = "<group>"; };
+		1B9086401DBA5E8500CAFC74 /* OverwatchHero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverwatchHero.swift; sourceTree = "<group>"; };
+		1B9086421DBA63F300CAFC74 /* Hero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
+		1B9086441DBA66E800CAFC74 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		7D69AE671DAAF58B006B180A /* Overwatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Overwatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D69AE6A1DAAF58B006B180A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D69AE6C1DAAF58B006B180A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +95,10 @@
 			children = (
 				7D69AE6A1DAAF58B006B180A /* AppDelegate.swift */,
 				7D69AE6C1DAAF58B006B180A /* ViewController.swift */,
+				1B9086401DBA5E8500CAFC74 /* OverwatchHero.swift */,
+				1B9086421DBA63F300CAFC74 /* Hero.swift */,
+				1B9086441DBA66E800CAFC74 /* Game.swift */,
+				1B90863E1DBA5B5300CAFC74 /* HeroAttributes.swift */,
 				7D69AE6E1DAAF58B006B180A /* Main.storyboard */,
 				7D69AE711DAAF58B006B180A /* Assets.xcassets */,
 				7D69AE731DAAF58B006B180A /* LaunchScreen.storyboard */,
@@ -221,8 +233,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B9086431DBA63F300CAFC74 /* Hero.swift in Sources */,
+				1B9086451DBA66E800CAFC74 /* Game.swift in Sources */,
+				1B90863F1DBA5B5300CAFC74 /* HeroAttributes.swift in Sources */,
 				7D69AE6D1DAAF58B006B180A /* ViewController.swift in Sources */,
 				7D69AE6B1DAAF58B006B180A /* AppDelegate.swift in Sources */,
+				1B9086411DBA5E8500CAFC74 /* OverwatchHero.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
