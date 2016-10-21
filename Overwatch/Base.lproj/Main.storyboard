@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11521.1" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="GYL-22-rZr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="GYL-22-rZr">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11517.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,12 +18,67 @@
                     <view key="view" contentMode="scaleToFill" id="83F-ks-0eR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KtY-9J-ntn">
+                                <frame key="frameInset" minX="16" minY="134" width="343" height="381"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KPQ-Hp-Z8G">
+                                        <rect key="frame" x="71" y="135" width="200" height="110"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="KPQ-Hp-Z8G" firstAttribute="top" secondItem="KtY-9J-ntn" secondAttribute="top" id="722-kI-rCO"/>
+                                    <constraint firstItem="KPQ-Hp-Z8G" firstAttribute="height" secondItem="KtY-9J-ntn" secondAttribute="height" id="FVA-sG-sEu"/>
+                                    <constraint firstAttribute="trailing" secondItem="KPQ-Hp-Z8G" secondAttribute="trailing" id="H9h-p4-QFy"/>
+                                    <constraint firstAttribute="bottom" secondItem="KPQ-Hp-Z8G" secondAttribute="bottom" id="K9t-2R-dKU"/>
+                                    <constraint firstItem="KPQ-Hp-Z8G" firstAttribute="leading" secondItem="KtY-9J-ntn" secondAttribute="leading" id="OeX-ka-GxU"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="GYL-22-rZr" id="tcG-nB-Dk8"/>
+                                </connections>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5UZ-eR-m7b">
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="dIB-j2-4Wt">
+                                <segments>
+                                    <segment title="Attack"/>
+                                    <segment title="Defense"/>
+                                    <segment title="Tank"/>
+                                    <segment title="Support"/>
+                                </segments>
+                                <connections>
+                                    <action selector="heroTypeSelector:" destination="GYL-22-rZr" eventType="valueChanged" id="ewO-sn-WE0"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dIB-j2-4Wt" firstAttribute="leading" secondItem="83F-ks-0eR" secondAttribute="leadingMargin" id="9lQ-Ae-2Qf"/>
+                            <constraint firstItem="5UZ-eR-m7b" firstAttribute="trailing" secondItem="83F-ks-0eR" secondAttribute="trailingMargin" id="9pm-4T-hxP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KtY-9J-ntn" secondAttribute="trailing" id="DtS-8A-KkV"/>
+                            <constraint firstItem="dIB-j2-4Wt" firstAttribute="trailing" secondItem="83F-ks-0eR" secondAttribute="trailingMargin" id="I58-HP-tqA"/>
+                            <constraint firstItem="dIB-j2-4Wt" firstAttribute="top" secondItem="KtY-9J-ntn" secondAttribute="bottom" constant="49" id="Js6-sH-L93"/>
+                            <constraint firstItem="5UZ-eR-m7b" firstAttribute="top" secondItem="z8f-AC-pGq" secondAttribute="bottom" constant="48" id="VII-dj-kyZ"/>
+                            <constraint firstItem="cR2-hp-cdF" firstAttribute="top" secondItem="KtY-9J-ntn" secondAttribute="bottom" constant="152" id="Xqh-2P-fPe"/>
+                            <constraint firstItem="5UZ-eR-m7b" firstAttribute="leading" secondItem="83F-ks-0eR" secondAttribute="leadingMargin" id="jg4-XA-KJI"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="KtY-9J-ntn" secondAttribute="leading" id="m5f-A4-u9h"/>
+                            <constraint firstItem="KtY-9J-ntn" firstAttribute="top" secondItem="5UZ-eR-m7b" secondAttribute="bottom" constant="36" id="nfd-9Y-jiz"/>
+                            <constraint firstItem="KtY-9J-ntn" firstAttribute="top" secondItem="z8f-AC-pGq" secondAttribute="bottom" constant="114" id="raK-ek-7nI"/>
+                            <constraint firstItem="cR2-hp-cdF" firstAttribute="top" secondItem="dIB-j2-4Wt" secondAttribute="bottom" constant="75" id="zJH-DT-b3V"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="characterImageStack" destination="KPQ-Hp-Z8G" id="Ama-Oy-fY0"/>
+                        <outlet property="characterNameLabel" destination="5UZ-eR-m7b" id="jnR-S4-AMp"/>
+                        <outlet property="characterScroll" destination="KtY-9J-ntn" id="kUr-56-QtN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aXW-Us-hQL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1308" y="118"/>
+            <point key="canvasLocation" x="-1308" y="117.39130434782609"/>
         </scene>
     </scenes>
 </document>
